@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Convocatoria — Futuro Esposo</title>
+	 <style>
+<body>
+
+   /* =========================================
+   PALETA
+========================================= */
+
+:root {
+
+    --azul: #1F6B7E;
+
+    --turquesa: #5CC6C6;
+
+    --verde-lima: #A3D133;
+
+    --verde: #7CC664;
+
+    --fondo: #EEF7F6;
+
+    --blanco: #FFFFFF;
+
+    --texto: #243F45;
+
+}
+
+
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color: var(--fondo);
+
+    color: var(--texto);
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.hero {
+
+    background-color: var(--azul);
+
+    color: var(--blanco);
+
+    padding: 90px 20px 80px;
+
+    text-align: center;
+
+}
+
+
+.hero-contenido {
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+
+.etiqueta {
+
+    display: inline-block;
+
+    margin: 0 0 20px;
+
+    padding: 8px 18px;
+
+    border: 1px solid var(--turquesa);
+
+    border-radius: 50px;
+
+    color: var(--turquesa);
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.hero h1 {
+
+    margin: 0;
+
+    font-size: clamp(35px, 6vw, 65px);
+
+    letter-spacing: 3px;
+
+}
+
+
+.hero h2 {
+
+    margin: 5px 0 20px;
+
+    color: var(--turquesa);
+
+    font-size: clamp(24px, 4vw, 38px);
+
+    letter-spacing: 5px;
+
+}
+
+
+.linea-decorativa {
+
+    width: 80px;
+
+    height: 4px;
+
+    margin: 25px auto;
+
+    background-color: var(--verde-lima);
+
+    border-radius: 10px;
+
+}
+
+
+.subtitulo {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    font-size: 17px;
+
+}
+
+
+.codigo-convocatoria {
+
+    margin-top: 30px;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.75;
+
+}
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.contenedor {
+
+    width: 92%;
+
+    max-width: 950px;
+
+    margin: 60px auto;
+
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.tarjeta {
+
+    position: relative;
+
+    background-color: var(--blanco);
+
+    padding: 45px;
+
+    margin-bottom: 35px;
+
+    border-radius: 16px;
+
+    border-left: 6px solid var(--turquesa);
+
+    box-shadow:
+        0 8px 25px rgba(31, 107, 126, 0.08);
+
+}
+
+
+.tarjeta-destacada {
+
+    border-left-color: var(--verde-lima);
+
+}
+
+
+.numero-seccion {
+
+    color: var(--turquesa);
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.tarjeta h2,
+.declaracion h2 {
+
+    margin-top: 0;
+
+    color: var(--azul);
+
+    font-size: 27px;
+
+}
+
+
+.descripcion-seccion {
+
+    margin-top: -8px;
+
+    color: #5B747A;
+
+}
+
+
+/* =========================================
+   FORMULARIOS
+========================================= */
+
+.formulario-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+
+}
+
+
+.campo {
+
+    margin-top: 25px;
+
+}
+
+
+.campo-completo {
+
+    grid-column: 1 / -1;
+
+}
+
+
+.campo label,
+.pregunta label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--azul);
+
+    font-weight: bold;
+
+}
+
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #C8DEDF;
+
+    border-radius: 9px;
+
+    background-color: #FAFEFD;
+
+    color: var(--texto);
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s;
+
+}
+
+
+textarea {
+
+    resize: vertical;
+
+    min-height: 120px;
+
+}
+
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+
+    border-color: var(--turquesa);
+
+    box-shadow:
+        0 0 0 3px rgba(92, 198, 198, 0.18);
+
+}
+
+
+/* =========================================
+   OPCIONES
+========================================= */
+
+.opciones {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+}
+
+
+.opciones-verticales {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+.opcion {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 12px 15px;
+
+    border: 1px solid #D6E7E6;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.opcion:hover {
+
+    border-color: var(--turquesa);
+
+    background-color: #F2FBFA;
+
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+
+    accent-color: var(--verde);
+
+}
+
+
+/* =========================================
+   CHECKBOX DE PERSONALIDAD
+========================================= */
+
+.checkbox-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+
+}
+
+
+.checkbox {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px;
+
+    border: 1px solid #D6E7E6;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.checkbox:hover {
+
+    background-color: #F2FBFA;
+
+    border-color: var(--turquesa);
+
+}
+
+
+.campo-margen {
+
+    margin-top: 30px;
+
+}
+
+
+/* =========================================
+   PREGUNTAS ELIMINATORIAS
+========================================= */
+
+.eliminatoria {
+
+    border-left-color: var(--verde-lima);
+
+}
+
+
+.pregunta {
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background-color: #F5FAEF;
+
+    border-radius: 12px;
+
+    border-left: 4px solid var(--verde-lima);
+
+}
+
+
+/* =========================================
+   ADJUNTOS
+========================================= */
+
+.adjuntos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.adjunto {
+
+    padding: 25px;
+
+    border: 1px dashed var(--turquesa);
+
+    border-radius: 12px;
+
+    text-align: center;
+
+}
+
+
+.adjunto span {
+
+    display: block;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.adjunto strong {
+
+    display: block;
+
+    color: var(--azul);
+
+}
+
+
+.adjunto small {
+
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #668187;
+
+}
+
+
+.adjunto input {
+
+    max-width: 100%;
+
+}
+
+
+/* =========================================
+   DECLARACIÓN
+========================================= */
+
+.declaracion {
+
+    background-color: var(--azul);
+
+    color: var(--blanco);
+
+    padding: 50px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+}
+
+
+.declaracion h2 {
+
+    color: var(--turquesa);
+
+}
+
+
+.requisito-final {
+
+    margin: 30px auto;
+
+    padding: 18px;
+
+    max-width: 650px;
+
+    border: 1px solid var(--turquesa);
+
+    border-radius: 10px;
+
+}
+
+
+.requisito-final strong {
+
+    color: var(--verde-lima);
+
+}
+
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.boton-enviar {
+
+    border: none;
+
+    padding: 17px 35px;
+
+    background-color: var(--verde);
+
+    color: #173A3D;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.boton-enviar:hover {
+
+    background-color: var(--verde-lima);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    padding: 40px 20px;
+
+    background-color: var(--azul);
+
+    color: var(--blanco);
+
+    text-align: center;
+
+    font-size: 13px;
+
+}
+
+
+footer strong {
+
+    color: var(--verde-lima);
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+
+    .hero {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .tarjeta {
+
+        padding: 28px 22px;
+
+    }
+
+
+    .formulario-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .checkbox-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .adjuntos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+
+    .checkbox-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+	 </style>
+
+</head>
+
+<body>
+
+
+    <!-- =========================================
+         ENCABEZADO
+    ========================================== -->
+
+    <header class="hero">
+
+        <div class="hero-contenido">
+
+            <p class="etiqueta">
+                 CONVOCATORIA ABIERTA
+            </p>
+
+            <h1>
+                PROCESO DE SELECCIÓN
+            </h1>
+
+            <h2>
+                FUTURO ESPOSO
+            </h2>
+
+            <div class="linea-decorativa"></div>
+
+            <p class="subtitulo">
+                Se busca candidato para incorporarse
+                a proyecto familiar de largo plazo.
+            </p>
+
+            <p class="codigo-convocatoria">
+                CONVOCATORIA Nº 001 — VACANTE: 1
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+    ========================================== -->
+
+    <main class="contenedor">
+
+
+        <!-- INFORMACIÓN DEL CANDIDATO -->
+
+        <section class="tarjeta">
+
+            <div class="numero-seccion">
+			
+                01
+            </div>
+
+            <h2>
+                 Información del candidato
+            </h2>
+
+            <p class="descripcion-seccion">
+                Datos básicos del candidato.
+            </p>
+
+
+            <div class="formulario-grid">
+
+
+                <div class="campo campo-completo">
+
+                    <label for="nombre">
+                        Nombre completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribí tu nombre"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="edad">
+                        Edad
+                    </label>
+
+                    <input
+                        type="number"
+                        id="edad"
+                        name="edad"
+                        min="18"
+                        placeholder="Edad"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="nacionalidad">
+                        Nacionalidad
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nacionalidad"
+                        name="nacionalidad"
+                        placeholder="Nacionalidad"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="ciudad">
+                        Ciudad de residencia
+                    </label>
+
+                    <input
+                        type="text"
+                        id="ciudad"
+                        name="ciudad"
+                        placeholder="Ciudad"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="ocupacion">
+                        Profesión / ocupación
+                    </label>
+
+                    <input
+                        type="text"
+                        id="ocupacion"
+                        name="ocupacion"
+                        placeholder="¿A qué te dedicás?"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PERFIL JAPONÉS -->
+
+        <section class="tarjeta tarjeta-destacada">
+
+            <div class="numero-seccion">
+			
+                02
+            </div>
+
+            <h2>
+			
+                🇯🇵 Perfil cultural
+            </h2>
+
+            <p class="descripcion-seccion">
+                Porque sí, Japón es una preferencia bastante importante
+                en esta convocatoria.
+            </p>
+
+
+            <div class="campo">
+
+                <label for="relacion-japon">
+                    ¿Cuál es tu relación con Japón?
+                </label>
+
+                <select id="relacion-japon">
+
+                    <option value="">
+                        Seleccioná una opción
+                    </option>
+
+                    <option>
+                        Soy japonés y crecí en Japón
+                    </option>
+
+                    <option>
+                        Soy japonés pero crecí fuera de Japón
+                    </option>
+
+                    <option>
+                        Soy mitad japonés
+                    </option>
+
+                    <option>
+                        Viví varios años en Japón
+                    </option>
+
+                    <option>
+                        Vivo actualmente en Japón
+                    </option>
+
+                    <option>
+                        Tengo una fuerte conexión con Japón
+                    </option>
+
+                    <option>
+                        Estoy aprendiendo sobre Japón
+                    </option>
+
+                    <option>
+                        No tengo una conexión particular
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="formulario-grid">
+
+
+                <div class="campo">
+
+                    <label for="ciudad-japon">
+                        Ciudad / prefectura de origen
+                    </label>
+
+                    <input
+                        type="text"
+                        id="ciudad-japon"
+                        placeholder="Ej. Tokyo, Kyoto, Osaka..."
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="japones">
+                        Nivel de japonés
+                    </label>
+
+                    <select id="japones">
+
+                        <option>
+                            Nativo
+                        </option>
+
+                        <option>
+                            Avanzado
+                        </option>
+
+                        <option>
+                            Intermedio
+                        </option>
+
+                        <option>
+                            Básico
+                        </option>
+
+                        <option>
+                            No hablo japonés
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label>
+                    ¿Estarías dispuesto a vivir fuera de Japón?
+                </label>
+
+
+                <div class="opciones">
+
+                    <label class="opcion">
+
+                        <input
+                            type="radio"
+                            name="vivir-fuera"
+                        >
+
+                        Sí
+
+                    </label>
+
+
+                    <label class="opcion">
+
+                        <input
+                            type="radio"
+                            name="vivir-fuera"
+                        >
+
+                        No
+
+                    </label>
+
+
+                    <label class="opcion">
+
+                        <input
+                            type="radio"
+                            name="vivir-fuera"
+                        >
+
+                        Depende de las circunstancias
+
+                    </label>
+
+                </div>
+
+            </div>
+
+        </section>
+<section class="tarjeta">
+    <h2> Religión, creencias y valores</h2>
+
+    <label for="religion">
+        ¿Cuál es tu religión o postura espiritual?
+    </label>
+
+    <select id="religion" name="religion">
+        <option value="">Seleccioná una opción</option>
+        <option value="cristiano-liberal">Cristiano de pensamiento liberal</option>
+        <option value="catolico">Católico</option>
+        <option value="protestante">Protestante</option>
+        <option value="evangelico">Evangélico</option>
+        <option value="ortodoxo">Cristiano ortodoxo</option>
+        <option value="otro-cristiano">Otra denominación cristiana</option>
+        <option value="cree-dios">Creo en Dios, pero no sigo una religión</option>
+        <option value="deista">Deísta</option>
+        <option value="agnostico">Agnóstico</option>
+        <option value="ateo">Ateo</option>
+        <option value="judio">Judío</option>
+        <option value="musulman">Musulmán</option>
+        <option value="budista">Budista</option>
+        <option value="hindu">Hindú</option>
+        <option value="otra-religion">Otra religión</option>
+        <option value="espiritual">Espiritual, pero sin religión</option>
+        <option value="ninguna">Ninguna</option>
+        <option value="prefiero-no-decir">Prefiero no decirlo</option>
+    </select>
+
+
+    <label>
+        ¿Qué tan importante es la religión o espiritualidad en tu vida?
+    </label>
+
+    <label>
+        <input type="radio" name="importancia-religion" value="muy-importante">
+        Muy importante
+    </label>
+
+    <label>
+        <input type="radio" name="importancia-religion" value="importante">
+        Importante
+    </label>
+
+    <label>
+        <input type="radio" name="importancia-religion" value="moderada">
+        Moderadamente importante
+    </label>
+
+    <label>
+        <input type="radio" name="importancia-religion" value="poco">
+        Poco importante
+    </label>
+
+    <label>
+        <input type="radio" name="importancia-religion" value="nada">
+        No es importante para mí
+    </label>
+
+
+    <label for="practica-religiosa">
+        ¿Cómo vivís actualmente tus creencias?
+    </label>
+
+    <textarea id="practica-religiosa" name="practica-religiosa"
+        placeholder="Por ejemplo: voy a la iglesia, oro, leo la Biblia, tengo una espiritualidad personal, etc."></textarea>
+
+
+    <label for="pareja-creencias">
+        ¿Qué esperás respecto a las creencias religiosas dentro de una pareja?
+    </label>
+
+    <textarea id="pareja-creencias" name="pareja-creencias"
+        placeholder="Contame tu opinión..."></textarea>
+
+
+    <label for="respeto-creencias">
+        ¿Cómo reaccionarías si tu pareja tuviera creencias diferentes a las tuyas?
+    </label>
+
+    <textarea id="respeto-creencias" name="respeto-creencias"
+        placeholder="¿Podrías respetarlas aunque no las compartieras?"></textarea>
+
+
+    <label for="libertad-pareja">
+        ¿Qué opinás sobre que cada miembro de la pareja tenga libertad para tomar
+        sus propias decisiones sobre su vestimenta, trabajo, estudios, amistades,
+        hobbies y estilo de vida?
+    </label>
+
+    <textarea id="libertad-pareja" name="libertad-pareja"
+        placeholder="Tu respuesta..."></textarea>
+
+
+    <label for="educacion-hijos">
+        Si tuvieras hijos, ¿cómo te gustaría abordar la religión o espiritualidad
+        en su crianza?
+    </label>
+
+    <textarea id="educacion-hijos" name="educacion-hijos"
+        placeholder="Contame cómo lo imaginás..."></textarea>
+<label for="religion-limites">
+    ¿Hay alguna creencia o práctica religiosa que consideres indispensable
+    que tu futura pareja comparta?
+</label>
+
+<textarea id="religion-limites" name="religion-limites"
+    placeholder="Sé específico/a si querés..."></textarea>
+</section>
+
+
+        <!-- PERSONALIDAD -->
+
+        <section class="tarjeta">
+
+            <div class="numero-seccion">
+			
+                03
+            </div>
+
+            <h2>
+                 Perfil de personalidad
+            </h2>
+
+            <p class="descripcion-seccion">
+                Seleccioná las características que mejor te describen.
+            </p>
+
+
+            <div class="checkbox-grid">
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Tranquilo</span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Serio</span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Amable</span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Cariñoso</span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Divertido</span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Reservado</span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Sociable</span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Protector</span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Ambicioso</span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Paciente</span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Responsable</span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Curioso</span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input type="checkbox">
+                    <span>Independiente</span>
+
+                </label>
+
+
+            </div>
+
+
+            <div class="campo campo-margen">
+
+                <label for="cinco-palabras">
+                    Describite en 5 palabras
+                </label>
+
+                <input
+                    type="text"
+                    id="cinco-palabras"
+                    placeholder="Ej. tranquilo, curioso, leal..."
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RELACIONES -->
+
+        <section class="tarjeta">
+
+            <div class="numero-seccion">
+			
+                04
+            </div>
+
+            <h2>
+                 Relaciones
+            </h2>
+
+            <p class="descripcion-seccion">
+                Queremos saber qué significa para vos construir
+                una relación.
+            </p>
+
+
+            <div class="campo">
+
+                <label>
+                    ¿Qué buscás actualmente?
+                </label>
+
+
+                <div class="opciones-verticales">
+
+                    <label class="opcion">
+
+                        <input
+                            type="radio"
+                            name="busqueda"
+                        >
+
+                        Relación seria
+
+                    </label>
+
+
+                    <label class="opcion">
+
+                        <input
+                            type="radio"
+                            name="busqueda"
+                        >
+
+                        Matrimonio
+
+                    </label>
+
+
+                    <label class="opcion">
+
+                        <input
+                            type="radio"
+                            name="busqueda"
+                        >
+
+                        Conocer a alguien y ver qué pasa
+
+                    </label>
+
+
+                    <label class="opcion">
+
+                        <input
+                            type="radio"
+                            name="busqueda"
+                        >
+
+                        No tengo idea, pero acá estoy 
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="discusion">
+                    ¿Cómo resolvés una discusión?
+                </label>
+
+                <textarea
+                    id="discusion"
+                    rows="5"
+                    placeholder="Contanos..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="buena-pareja">
+                    ¿Qué significa para vos ser una buena pareja?
+                </label>
+
+                <textarea
+                    id="buena-pareja"
+                    rows="5"
+                    placeholder="Contanos..."
+                ></textarea>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PROYECTO FAMILIAR -->
+
+        <section class="tarjeta">
+
+            <div class="numero-seccion">
+			
+                05
+            </div>
+
+            <h2>
+                 Proyecto familiar
+            </h2>
+
+
+            <div class="campo">
+
+                <label>
+                    ¿Querés tener hijos?
+                </label>
+
+
+                <div class="opciones-verticales">
+
+                    <label class="opcion">
+                        <input type="radio" name="hijos">
+                        Sí
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="hijos">
+                        No
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="hijos">
+                        Tal vez
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="hijos">
+                        No lo sé todavía
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="padre">
+                    ¿Qué tipo de padre te gustaría ser?
+                </label>
+
+                <textarea
+                    id="padre"
+                    rows="5"
+                    placeholder="Contanos..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="error-hijo">
+                    ¿Cómo reaccionarías si tu hijo comete
+                    un error importante?
+                </label>
+
+                <textarea
+                    id="error-hijo"
+                    rows="5"
+                    placeholder="Contanos..."
+                ></textarea>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- VIDA COTIDIANA -->
+
+        <section class="tarjeta">
+
+            <div class="numero-seccion">
+			
+                06
+            </div>
+
+            <h2>
+                 Vida cotidiana
+            </h2>
+
+
+            <div class="campo">
+
+                <label>
+                    Distribución de tareas domésticas
+                </label>
+
+
+                <div class="opciones-verticales">
+
+                    <label class="opcion">
+                        <input type="radio" name="tareas">
+                        50 / 50
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="tareas">
+                        Según disponibilidad
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="tareas">
+                        Las hacemos juntos
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="tareas">
+                        Otra
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label>
+                    ¿Sabés cocinar?
+                </label>
+
+
+                <div class="opciones-verticales">
+
+                    <label class="opcion">
+                        <input type="radio" name="cocina">
+                        Sí
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="cocina">
+                        Algunas cosas
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="cocina">
+                        No, pero estoy dispuesto a aprender
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="cocina">
+                        Mi especialidad es pedir delivery 
+                    </label>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FINANZAS -->
+
+        <section class="tarjeta">
+
+            <div class="numero-seccion">
+			
+                07
+            </div>
+
+            <h2>
+                 Finanzas y estabilidad
+            </h2>
+
+            <p class="descripcion-seccion">
+                La estabilidad económica es una preferencia importante
+                para este proyecto familiar.
+            </p>
+
+
+            <div class="campo">
+
+                <label for="ocupacion-finanzas">
+                    Situación profesional
+                </label>
+
+                <select id="ocupacion-finanzas">
+
+                    <option>
+                        Empleo estable
+                    </option>
+
+                    <option>
+                        Profesional independiente
+                    </option>
+
+                    <option>
+                        Empresario
+                    </option>
+
+                    <option>
+                        Emprendedor
+                    </option>
+
+                    <option>
+                        Actualmente buscando trabajo
+                    </option>
+
+                    <option>
+                        Otra situación
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label>
+                    ¿Cómo manejás tu dinero?
+                </label>
+
+
+                <div class="opciones-verticales">
+
+                    <label class="opcion">
+                        <input type="radio" name="dinero">
+                        Ahorro y presupuesto
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="dinero">
+                        Soy bastante organizado
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="dinero">
+                        Estoy aprendiendo
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="dinero">
+                        ¿Qué es un presupuesto? 
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="independencia">
+                    ¿Qué importancia tiene para vos la independencia
+                    económica de ambos miembros de la pareja?
+                </label>
+
+                <textarea
+                    id="independencia"
+                    rows="5"
+                    placeholder="Contanos..."
+                ></textarea>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- APARIENCIA -->
+
+        <section class="tarjeta">
+
+            <div class="numero-seccion">
+			
+                08
+            </div>
+
+            <h2>
+                 Apariencia y estilo
+            </h2>
+
+
+            <div class="formulario-grid">
+
+
+                <div class="campo">
+
+                    <label for="estilo">
+                        ¿Cómo describirías tu estilo?
+                    </label>
+
+                    <select id="estilo">
+
+                        <option>
+                            Elegante
+                        </option>
+
+                        <option>
+                            Minimalista
+                        </option>
+
+                        <option>
+                            Casual
+                        </option>
+
+                        <option>
+                            Formal
+                        </option>
+
+                        <option>
+                            Streetwear
+                        </option>
+
+                        <option>
+                            Otro
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="fisico">
+                        ¿Cómo describirías tu físico?
+                    </label>
+
+                    <select id="fisico">
+
+                        <option>
+                            Delgado
+                        </option>
+
+                        <option>
+                            Atlético
+                        </option>
+
+                        <option>
+                            Promedio
+                        </option>
+
+                        <option>
+                            Musculoso
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label>
+                    ¿Cómo describirías tu estilo de cuidado personal?
+                </label>
+
+                <textarea
+                    rows="4"
+                    placeholder="Contanos..."
+                ></textarea>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PREGUNTAS ELIMINATORIAS -->
+
+        <section class="tarjeta eliminatoria">
+
+            <div class="numero-seccion">
+			
+                09
+            </div>
+
+            <h2>
+                 Preguntas eliminatorias
+            </h2>
+
+            <p class="descripcion-seccion">
+                Estas preguntas requieren una respuesta sincera.
+            </p>
+
+
+            <div class="pregunta">
+
+                <label for="dia-horrible">
+
+                    Tu pareja está teniendo un día horrible.
+                    Llegás a casa y ella está de mal humor.
+                    ¿Qué hacés?
+
+                </label>
+
+                <textarea
+                    id="dia-horrible"
+                    rows="6"
+                    placeholder="Tu respuesta será evaluada por el comité..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="pregunta">
+
+                <label for="proyecto-pareja">
+
+                    Tu pareja quiere comenzar un proyecto personal
+                    que requiere mucho tiempo.
+                    ¿Cómo reaccionás?
+
+                </label>
+
+                <textarea
+                    id="proyecto-pareja"
+                    rows="6"
+                    placeholder="Tu respuesta..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="pregunta">
+
+                <label for="error-propio">
+
+                    ¿Qué hacés cuando reconocés que vos fuiste
+                    quien cometió un error?
+
+                </label>
+
+                <textarea
+                    id="error-propio"
+                    rows="6"
+                    placeholder="Tu respuesta..."
+                ></textarea>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ADJUNTOS -->
+
+        <section class="tarjeta">
+
+            <div class="numero-seccion">
+			
+                10
+            </div>
+
+            <h2>
+                Adjuntos
+            </h2>
+
+
+            <div class="adjuntos">
+
+                <div class="adjunto">
+
+                    <span></span>
+
+                    <strong>
+                        Foto
+                    </strong>
+
+                    <small>
+                        Opcional
+                    </small>
+
+                    <input
+                        type="file"
+                        accept="image/*"
+                    >
+
+                </div>
+
+
+                <div class="adjunto">
+
+                    <span></span>
+
+                    <strong>
+                        CV
+                    </strong>
+
+                    <small>
+                        Opcional
+                    </small>
+
+                    <input
+                        type="file"
+                    >
+
+                </div>
+
+
+                <div class="adjunto">
+
+                    <span></span>
+
+                    <strong>
+                        Carta de presentación
+                    </strong>
+
+                    <small>
+                        Opcional
+                    </small>
+
+                    <input
+                        type="file"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- DECLARACIÓN FINAL -->
+
+        <section class="declaracion">
+
+            <div class="numero-seccion">
+			
+                11
+            </div>
+
+            <h2>
+                 Declaración final
+            </h2>
+
+
+            <p>
+
+                Declaro que la información proporcionada es verdadera
+                y acepto que mi candidatura será evaluada según
+                criterios de compatibilidad, estabilidad emocional,
+                responsabilidad, sentido del humor y capacidad para
+                convivir con una mujer que probablemente tenga
+                demasiados proyectos simultáneos.
+
+            </p>
+
+
+            <p class="requisito-final">
+
+                Requisito fundamental:
+                <strong>
+                    ser una persona decente. 
+                </strong>
+
+            </p>
+
+
+            <button
+                type="button"
+                class="boton-enviar"
+            >
+
+                ENVIAR POSTULACIÓN
+
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <p>
+            CONVOCATORIA Nº 001
+        </p>
+
+        <p>
+            Vacantes disponibles: <strong>1</strong>
+        </p>
+
+        <p>
+            Nivel de competencia: desconocido.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
