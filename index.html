@@ -1065,7 +1065,7 @@ footer strong {
 </div>
 
 </section>
-```
+
 
 <section class="tarjeta">
     <h2> Religión, creencias y valores</h2>
@@ -1278,15 +1278,24 @@ footer strong {
     </div>
 
 </section>
+<!-- RELACIONES -->
 
-        <!-- RELACIONES -->
+<section class="tarjeta">
 
-        <section class="tarjeta">
+    <div class="numero-seccion">
+        04
+    </div>
 
-            <div class="numero-seccion">
-		
-<div class="campo">
+    <h2>
+        Relaciones
+    </h2>
 
+    <p class="descripcion-seccion">
+        Queremos saber qué significa para vos construir
+        una relación.
+    </p>
+
+    <!-- Aquí continúa tu pregunta "¿Qué buscás actualmente?" -->
     <label>
         ¿Qué buscás actualmente?
     </label>
@@ -1973,10 +1982,9 @@ footer strong {
         </p>
 
     </footer>
-	<script>
+
+<script>
 document.querySelectorAll('input, select, textarea').forEach((campo, i) => {
-    const etiqueta = campo.closest('label');
-    const contenedor = campo.closest('.campo, .pregunta');
 
     function limpiar(texto) {
         return texto
@@ -1988,35 +1996,49 @@ document.querySelectorAll('input, select, textarea').forEach((campo, i) => {
             .replace(/^_|_$/g, '');
     }
 
+    // Asignar un nombre a los campos que todavía no lo tienen
     if (!campo.name) {
         if (campo.type === 'checkbox' &&
             campo.closest('.checkbox-grid')) {
             campo.name = 'personalidad[]';
+
         } else if (campo.type === 'file') {
             const titulo = campo.closest('.adjunto')
                 ?.querySelector('strong')?.textContent;
+
             campo.name = limpiar(titulo || `archivo_${i}`);
+
         } else if (campo.id) {
             campo.name = campo.id;
+
         } else {
-            const texto = contenedor?.querySelector('label')
-                ?.textContent || `respuesta_${i}`;
-            campo.name = limpiar(texto);
+            const contenedor = campo.closest('.campo, .pregunta');
+            const etiqueta = contenedor?.querySelector('label');
+
+            campo.name = limpiar(
+                etiqueta?.textContent || `respuesta_${i}`
+            );
         }
     }
 
+    // Corregir el valor de radios y casillas sin value explícito
     if (
         (campo.type === 'radio' || campo.type === 'checkbox') &&
-        !campo.value
+        !campo.hasAttribute('value')
     ) {
+        const etiqueta = campo.closest('label');
+
         if (etiqueta) {
             const copia = etiqueta.cloneNode(true);
+
             copia.querySelectorAll('input').forEach(el => el.remove());
+
             campo.value = copia.textContent.trim().replace(/\s+/g, ' ');
         } else {
             campo.value = 'seleccionado';
         }
     }
+
 });
 </script>
 
