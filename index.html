@@ -292,9 +292,8 @@ body {
 
 }
 
-
-.campo label,
-.pregunta label {
+.campo > label,
+.pregunta > label {
 
     display: block;
 
@@ -305,7 +304,6 @@ body {
     font-weight: bold;
 
 }
-
 
 input[type="text"],
 input[type="number"],
@@ -1338,7 +1336,7 @@ footer strong {
 
         </label>
 
-        <label class="opcion">
+                <label class="opcion">
 
             <input
                 type="radio"
@@ -1348,17 +1346,6 @@ footer strong {
 
             No tengo idea, pero acá estoy
 
-        </label>
-
-    </div>
-
-        <label class="opcion">
-            <input
-                type="radio"
-                name="busqueda"
-                value="No tengo idea, pero acá estoy"
-            >
-            No tengo idea, pero acá estoy
         </label>
 
     </div>
@@ -1417,7 +1404,7 @@ footer strong {
 
 
                 <div class="opciones-verticales">
-```html
+
 <label class="opcion">
     <input type="radio" name="hijos" value="Sí">
     Sí
