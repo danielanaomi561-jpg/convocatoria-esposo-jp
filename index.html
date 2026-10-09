@@ -1016,56 +1016,57 @@ footer strong {
 
             </div>
 
+<div class="campo">
 
-            <div class="campo">
+    <label>
+        ¿Estarías dispuesto a vivir fuera de Japón?
+    </label>
 
-                <label>
-                    ¿Estarías dispuesto a vivir fuera de Japón?
-                </label>
+    <div class="opciones">
 
+        <label class="opcion">
 
-                <div class="opciones">
+            <input
+                type="radio"
+                name="vivir-fuera"
+                value="Sí"
+            >
 
-                    <label class="opcion">
+            Sí
 
-                        <input
-                            type="radio"
-                            name="vivir-fuera"
-                        >
+        </label>
 
-                        Sí
+        <label class="opcion">
 
-                    </label>
+            <input
+                type="radio"
+                name="vivir-fuera"
+                value="No"
+            >
 
+            No
 
-                    <label class="opcion">
+        </label>
 
-                        <input
-                            type="radio"
-                            name="vivir-fuera"
-                        >
+        <label class="opcion">
 
-                        No
+            <input
+                type="radio"
+                name="vivir-fuera"
+                value="Depende de las circunstancias"
+            >
 
-                    </label>
+            Depende de las circunstancias
 
+        </label>
 
-                    <label class="opcion">
+    </div>
 
-                        <input
-                            type="radio"
-                            name="vivir-fuera"
-                        >
+</div>
 
-                        Depende de las circunstancias
+</section>
+```
 
-                    </label>
-
-                </div>
-
-            </div>
-
-        </section>
 <section class="tarjeta">
     <h2> Religión, creencias y valores</h2>
 
@@ -1176,231 +1177,173 @@ footer strong {
     placeholder="Sé específico/a si querés..."></textarea>
 </section>
 
-
-        <!-- PERSONALIDAD -->
-
-        <section class="tarjeta">
-
-            <div class="numero-seccion">
-			
-                03
-            </div>
-
-            <h2>
-                 Perfil de personalidad
-            </h2>
-
-            <p class="descripcion-seccion">
-                Seleccioná las características que mejor te describen.
-            </p>
-
-
-            <div class="checkbox-grid">
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Tranquilo</span>
-
-                </label>
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Serio</span>
-
-                </label>
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Amable</span>
-
-                </label>
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Cariñoso</span>
-
-                </label>
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Divertido</span>
-
-                </label>
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Reservado</span>
-
-                </label>
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Sociable</span>
-
-                </label>
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Protector</span>
-
-                </label>
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Ambicioso</span>
-
-                </label>
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Paciente</span>
-
-                </label>
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Responsable</span>
-
-                </label>
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Curioso</span>
-
-                </label>
-
-
-                <label class="checkbox">
-
-                    <input type="checkbox">
-                    <span>Independiente</span>
-
-                </label>
-
-
-            </div>
-
-
-            <div class="campo campo-margen">
-
-                <label for="cinco-palabras">
-                    Describite en 5 palabras
-                </label>
-
-                <input
-                    type="text"
-                    id="cinco-palabras"
-                    placeholder="Ej. tranquilo, curioso, leal..."
-                >
-
-            </div>
-
-        </section>
-
-
+<!-- PERSONALIDAD -->
+
+<section class="tarjeta">
+
+    <div class="numero-seccion">
+        03
+    </div>
+
+    <h2>
+        Perfil de personalidad
+    </h2>
+
+    <p class="descripcion-seccion">
+        Seleccioná las características que mejor te describen.
+    </p>
+
+    <div class="checkbox-grid">
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Tranquilo">
+            <span>Tranquilo</span>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Serio">
+            <span>Serio</span>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Amable">
+            <span>Amable</span>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Cariñoso">
+            <span>Cariñoso</span>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Divertido">
+            <span>Divertido</span>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Reservado">
+            <span>Reservado</span>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Sociable">
+            <span>Sociable</span>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Protector">
+            <span>Protector</span>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Ambicioso">
+            <span>Ambicioso</span>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Paciente">
+            <span>Paciente</span>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Responsable">
+            <span>Responsable</span>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Curioso">
+            <span>Curioso</span>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="personalidad[]" value="Independiente">
+            <span>Independiente</span>
+        </label>
+
+    </div>
+
+    <div class="campo campo-margen">
+
+        <label for="cinco-palabras">
+            Describite en 5 palabras
+        </label>
+
+        <input
+            type="text"
+            id="cinco-palabras"
+            name="cinco-palabras"
+            placeholder="Ej. tranquilo, curioso, leal..."
+        >
+
+    </div>
+
+</section>
 
         <!-- RELACIONES -->
 
         <section class="tarjeta">
 
             <div class="numero-seccion">
-			
-                04
-            </div>
+		
+<div class="campo">
 
-            <h2>
-                 Relaciones
-            </h2>
+    <label>
+        ¿Qué buscás actualmente?
+    </label>
 
-            <p class="descripcion-seccion">
-                Queremos saber qué significa para vos construir
-                una relación.
-            </p>
+    <div class="opciones-verticales">
 
+        <label class="opcion">
 
-            <div class="campo">
+            <input
+                type="radio"
+                name="busqueda"
+                value="Relación seria"
+            >
 
-                <label>
-                    ¿Qué buscás actualmente?
-                </label>
+            Relación seria
 
+        </label>
 
-                <div class="opciones-verticales">
+        <label class="opcion">
 
-                    <label class="opcion">
+            <input
+                type="radio"
+                name="busqueda"
+                value="Matrimonio"
+            >
 
-                        <input
-                            type="radio"
-                            name="busqueda"
-                        >
+            Matrimonio
 
-                        Relación seria
+        </label>
 
-                    </label>
+        <label class="opcion">
 
+            <input
+                type="radio"
+                name="busqueda"
+                value="Conocer a alguien y ver qué pasa"
+            >
 
-                    <label class="opcion">
+            Conocer a alguien y ver qué pasa
 
-                        <input
-                            type="radio"
-                            name="busqueda"
-                        >
+        </label>
 
-                        Matrimonio
+        <label class="opcion">
 
-                    </label>
+            <input
+                type="radio"
+                name="busqueda"
+                value="No tengo idea, pero acá estoy"
+            >
 
+            No tengo idea, pero acá estoy
 
-                    <label class="opcion">
+        </label>
 
-                        <input
-                            type="radio"
-                            name="busqueda"
-                        >
+    </div>
 
-                        Conocer a alguien y ver qué pasa
-
-                    </label>
-
-
-                    <label class="opcion">
-
-                        <input
-                            type="radio"
-                            name="busqueda"
-                        >
-
-                        No tengo idea, pero acá estoy 
-
-                    </label>
-
-                </div>
-
-            </div>
+</div>
 
 
             <div class="campo">
@@ -1516,199 +1459,187 @@ footer strong {
 
         </section>
 
+<!-- VIDA COTIDIANA -->
 
+<section class="tarjeta">
 
-        <!-- VIDA COTIDIANA -->
+    <div class="numero-seccion">
+        06
+    </div>
 
-        <section class="tarjeta">
+    <h2>
+        Vida cotidiana
+    </h2>
 
-            <div class="numero-seccion">
-			
-                06
-            </div>
+    <div class="campo">
 
-            <h2>
-                 Vida cotidiana
-            </h2>
+        <label>
+            Distribución de tareas domésticas
+        </label>
 
+        <div class="opciones-verticales">
 
-            <div class="campo">
+            <label class="opcion">
+                <input type="radio" name="tareas" value="50 / 50">
+                50 / 50
+            </label>
 
-                <label>
-                    Distribución de tareas domésticas
-                </label>
+            <label class="opcion">
+                <input type="radio" name="tareas" value="Según disponibilidad">
+                Según disponibilidad
+            </label>
 
+            <label class="opcion">
+                <input type="radio" name="tareas" value="Las hacemos juntos">
+                Las hacemos juntos
+            </label>
 
-                <div class="opciones-verticales">
+            <label class="opcion">
+                <input type="radio" name="tareas" value="Otra">
+                Otra
+            </label>
 
-                    <label class="opcion">
-                        <input type="radio" name="tareas">
-                        50 / 50
-                    </label>
+        </div>
 
-                    <label class="opcion">
-                        <input type="radio" name="tareas">
-                        Según disponibilidad
-                    </label>
+    </div>
 
-                    <label class="opcion">
-                        <input type="radio" name="tareas">
-                        Las hacemos juntos
-                    </label>
+    <div class="campo">
 
-                    <label class="opcion">
-                        <input type="radio" name="tareas">
-                        Otra
-                    </label>
+        <label>
+            ¿Sabés cocinar?
+        </label>
 
-                </div>
+        <div class="opciones-verticales">
 
-            </div>
+            <label class="opcion">
+                <input type="radio" name="cocina" value="Sí">
+                Sí
+            </label>
 
+            <label class="opcion">
+                <input type="radio" name="cocina" value="Algunas cosas">
+                Algunas cosas
+            </label>
 
-            <div class="campo">
+            <label class="opcion">
+                <input type="radio" name="cocina" value="No, pero estoy dispuesto a aprender">
+                No, pero estoy dispuesto a aprender
+            </label>
 
-                <label>
-                    ¿Sabés cocinar?
-                </label>
+            <label class="opcion">
+                <input type="radio" name="cocina" value="Mi especialidad es pedir delivery">
+                Mi especialidad es pedir delivery
+            </label>
 
+        </div>
 
-                <div class="opciones-verticales">
+    </div>
 
-                    <label class="opcion">
-                        <input type="radio" name="cocina">
-                        Sí
-                    </label>
+</section>
 
-                    <label class="opcion">
-                        <input type="radio" name="cocina">
-                        Algunas cosas
-                    </label>
+<!-- FINANZAS -->
 
-                    <label class="opcion">
-                        <input type="radio" name="cocina">
-                        No, pero estoy dispuesto a aprender
-                    </label>
+<section class="tarjeta">
 
-                    <label class="opcion">
-                        <input type="radio" name="cocina">
-                        Mi especialidad es pedir delivery 
-                    </label>
+    <div class="numero-seccion">
+        07
+    </div>
 
-                </div>
+    <h2>
+        Finanzas y estabilidad
+    </h2>
 
-            </div>
+    <p class="descripcion-seccion">
+        La estabilidad económica es una preferencia importante
+        para este proyecto familiar.
+    </p>
 
-        </section>
+    <div class="campo">
 
+        <label for="ocupacion-finanzas">
+            Situación profesional
+        </label>
 
+        <select id="ocupacion-finanzas" name="ocupacion-finanzas">
 
-        <!-- FINANZAS -->
+            <option value="Empleo estable">
+                Empleo estable
+            </option>
 
-        <section class="tarjeta">
+            <option value="Profesional independiente">
+                Profesional independiente
+            </option>
 
-            <div class="numero-seccion">
-			
-                07
-            </div>
+            <option value="Empresario">
+                Empresario
+            </option>
 
-            <h2>
-                 Finanzas y estabilidad
-            </h2>
+            <option value="Emprendedor">
+                Emprendedor
+            </option>
 
-            <p class="descripcion-seccion">
-                La estabilidad económica es una preferencia importante
-                para este proyecto familiar.
-            </p>
+            <option value="Actualmente buscando trabajo">
+                Actualmente buscando trabajo
+            </option>
 
+            <option value="Otra situación">
+                Otra situación
+            </option>
 
-            <div class="campo">
+        </select>
 
-                <label for="ocupacion-finanzas">
-                    Situación profesional
-                </label>
+    </div>
 
-                <select id="ocupacion-finanzas">
+    <div class="campo">
 
-                    <option>
-                        Empleo estable
-                    </option>
+        <label>
+            ¿Cómo manejás tu dinero?
+        </label>
 
-                    <option>
-                        Profesional independiente
-                    </option>
+        <div class="opciones-verticales">
 
-                    <option>
-                        Empresario
-                    </option>
+            <label class="opcion">
+                <input type="radio" name="dinero" value="Ahorro y presupuesto">
+                Ahorro y presupuesto
+            </label>
 
-                    <option>
-                        Emprendedor
-                    </option>
+            <label class="opcion">
+                <input type="radio" name="dinero" value="Soy bastante organizado">
+                Soy bastante organizado
+            </label>
 
-                    <option>
-                        Actualmente buscando trabajo
-                    </option>
+            <label class="opcion">
+                <input type="radio" name="dinero" value="Estoy aprendiendo">
+                Estoy aprendiendo
+            </label>
 
-                    <option>
-                        Otra situación
-                    </option>
+            <label class="opcion">
+                <input type="radio" name="dinero" value="¿Qué es un presupuesto?">
+                ¿Qué es un presupuesto?
+            </label>
 
-                </select>
+        </div>
 
-            </div>
+    </div>
 
+    <div class="campo">
 
-            <div class="campo">
+        <label for="independencia">
+            ¿Qué importancia tiene para vos la independencia
+            económica de ambos miembros de la pareja?
+        </label>
 
-                <label>
-                    ¿Cómo manejás tu dinero?
-                </label>
+        <textarea
+            id="independencia"
+            name="independencia"
+            rows="5"
+            placeholder="Contanos..."
+        ></textarea>
 
+    </div>
 
-                <div class="opciones-verticales">
+</section>
 
-                    <label class="opcion">
-                        <input type="radio" name="dinero">
-                        Ahorro y presupuesto
-                    </label>
-
-                    <label class="opcion">
-                        <input type="radio" name="dinero">
-                        Soy bastante organizado
-                    </label>
-
-                    <label class="opcion">
-                        <input type="radio" name="dinero">
-                        Estoy aprendiendo
-                    </label>
-
-                    <label class="opcion">
-                        <input type="radio" name="dinero">
-                        ¿Qué es un presupuesto? 
-                    </label>
-
-                </div>
-
-            </div>
-
-
-            <div class="campo">
-
-                <label for="independencia">
-                    ¿Qué importancia tiene para vos la independencia
-                    económica de ambos miembros de la pareja?
-                </label>
-
-                <textarea
-                    id="independencia"
-                    rows="5"
-                    placeholder="Contanos..."
-                ></textarea>
-
-            </div>
-
-        </section>
 
 
 
