@@ -9,7 +9,7 @@
 
     <title>Convocatoria — Futuro Esposo</title>
 	 <style>
-<body>
+
 
    /* =========================================
    PALETA
@@ -780,7 +780,11 @@ footer strong {
     <!-- =========================================
          CONTENIDO PRINCIPAL
     ========================================== -->
-
+<form
+    action="https://formspree.io/f/xjygwnzy"
+    method="POST"
+    enctype="multipart/form-data"
+>
     <main class="contenedor">
 
 
@@ -2003,7 +2007,7 @@ footer strong {
 
 
             <button
-                type="button"
+               type="submit""
                 class="boton-enviar"
             >
 
@@ -2015,6 +2019,7 @@ footer strong {
 
 
     </main>
+</form>
 
 
 
@@ -2037,6 +2042,52 @@ footer strong {
         </p>
 
     </footer>
+	<script>
+document.querySelectorAll('input, select, textarea').forEach((campo, i) => {
+    const etiqueta = campo.closest('label');
+    const contenedor = campo.closest('.campo, .pregunta');
+
+    function limpiar(texto) {
+        return texto
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .toLowerCase()
+            .trim()
+            .replace(/[^a-z0-9]+/g, '_')
+            .replace(/^_|_$/g, '');
+    }
+
+    if (!campo.name) {
+        if (campo.type === 'checkbox' &&
+            campo.closest('.checkbox-grid')) {
+            campo.name = 'personalidad[]';
+        } else if (campo.type === 'file') {
+            const titulo = campo.closest('.adjunto')
+                ?.querySelector('strong')?.textContent;
+            campo.name = limpiar(titulo || `archivo_${i}`);
+        } else if (campo.id) {
+            campo.name = campo.id;
+        } else {
+            const texto = contenedor?.querySelector('label')
+                ?.textContent || `respuesta_${i}`;
+            campo.name = limpiar(texto);
+        }
+    }
+
+    if (
+        (campo.type === 'radio' || campo.type === 'checkbox') &&
+        !campo.value
+    ) {
+        if (etiqueta) {
+            const copia = etiqueta.cloneNode(true);
+            copia.querySelectorAll('input').forEach(el => el.remove());
+            campo.value = copia.textContent.trim().replace(/\s+/g, ' ');
+        } else {
+            campo.value = 'seleccionado';
+        }
+    }
+});
+</script>
 
 
 </body>
